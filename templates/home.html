@@ -2,5 +2,43 @@
 
 
 {% block body %}
-<h1 class="text-center text-success">Welcome to my <span class="text-danger">Django Portfolio</span></h1>
+<div class="container">
+    <h1 class="text-center">Information</h1>
+    <p class="f-80">Hi! I'm Mahadi Hasan Munna. I'm a student of Daffodil International University. I'm studying BSc in CSE on 7th semseter. Here I'm creating my portfolio with Django.</p>
+</div>
+<div class="container">
+    
+    <div class="card">
+        <div class="card-header">
+            <h3 class="text-center">Work experience</h3>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Daffodil Computers Ltd</h5>
+          <strong class="card-text">Jr. Hardware Engineer</strong>
+          <p class="mt-2 card-text">Jan 2022 - Present</p>
+          <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">OS installation</li>
+              <li class="list-group-item">Desktop Build</li>
+              <li class="list-group-item">Hardware Check</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Daffodil Softwares Ltd</h5>
+          <strong class="card-text">Jr. Developer</strong>
+          <p class="mt-2 card-text">Jan 2021 - Dec 2021</p>
+          <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">HTML</li>
+              <li class="list-group-item">Bootstrap</li>
+              <li class="list-group-item">Django</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="container">
+    <h1 class="text-center">Skills</h1>
+</div>
 {% endblock %}
