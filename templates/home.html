@@ -3,72 +3,112 @@
 
 {% block body %}
 <div class="container">
-    <h1 class="text-center">Information</h1>
-    <p class="f-80">Hi! I'm Mahadi Hasan Munna. I'm a student of Daffodil International University. I'm studying BSc in CSE on 7th semseter. Here I'm creating my portfolio with Django.</p>
+  <div class="card text-white bg-secondary mb-4 mt-4">
+    <div class="card-header"><h3 class="text-center">Information</h3></div>
+    <div class="card-body">
+      <p class="f-80">Hi! I'm Mahadi Hasan Munna. I'm a student of Daffodil International University. I'm studying BSc in
+        CSE on 7th semseter. Here I'm creating my portfolio with Django.</p>
+    </div>
+  </div>
 </div>
 <div class="container">
-    
-    <div class="card">
-        <div class="card-header bg-warning">
-            <h3 class="text-center">Work experience</h3>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">1. Daffodil Computers Ltd</h5>
-          <strong class="card-text">Jr. Hardware Engineer</strong>
-          <p class="mt-2 card-text">Jan 2022 - Present</p>
-          <div class="card" style="width: 18rem;">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">OS installation</li>
-              <li class="list-group-item">Desktop Build</li>
-              <li class="list-group-item">Hardware Check</li>
-            </ul>
-          </div>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">2. Daffodil Softwares Ltd</h5>
-          <strong class="card-text">Jr. Developer</strong>
-          <p class="mt-2 card-text">Jan 2021 - Dec 2021</p>
-          <div class="card" style="width: 18rem;">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">HTML</li>
-              <li class="list-group-item">Bootstrap</li>
-              <li class="list-group-item">Django</li>
-            </ul>
+
+  <div class="card">
+    <div class="card-header bg-warning">
+      <h3 class="text-center">Work experience</h3>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            1. Daffodil Computers Ltd
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong class="card-text">Jr. Hardware Engineer</strong>
+            <p class="mt-2 card-text">Jan 2022 - Present</p>
+            <div class="card" style="width: 18rem;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">OS installation</li>
+                <li class="list-group-item">Desktop Build</li>
+                <li class="list-group-item">Hardware Check</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-</div>
-<div class="container mt-4">
-    <div class="card">
-        <div class="card-header bg-success">
-            <h3 class="text-center">Skills</h3>
-        </div>
-
-        <div class="row p-4">
-            <div class="col">
-                <h5 class="card-title">1. Programming Language</h5>
-                <div class="card" style="width: 18rem;">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">C</li>
-                      <li class="list-group-item">C++</li>
-                      <li class="list-group-item">Java</li>
-                      <li class="list-group-item">Java Script</li>
-                      <li class="list-group-item">Python</li>
-                    </ul>
-                  </div>
-              </div>
-            <div class="col">
-                <h5 class="card-title">2. Frameworks</h5>
-                <div class="card" style="width: 18rem;">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Bootstrap</li>
-                      <li class="list-group-item">Tailwind</li>
-                      <li class="list-group-item">Django</li>
-                      <li class="list-group-item">React</li>
-                    </ul>
-                </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            2. Daffodil Softwares Ltd
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong class="card-text">Jr. Developer</strong>
+            <p class="mt-2 card-text">Jan 2021 - Dec 2021</p>
+            <div class="card" style="width: 18rem;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">HTML</li>
+                <li class="list-group-item">Bootstrap</li>
+                <li class="list-group-item">Django</li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+</div>
+
+
+<div class="container mt-4 mb-4">
+  <div class="card">
+    <div class="card-header bg-success">
+      <h3 class="text-center">Skills</h3>
+    </div>
+
+    <div class="row p-4">
+      <div class="col">
+        <div class="card text-white bg-success mb-3">
+          <div class="card-header fw-bold">1. Programming Language</div>
+          <div class="card-body">
+            <div class="card">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">C</li>
+                <li class="list-group-item">C++</li>
+                <li class="list-group-item">Java</li>
+                <li class="list-group-item">Java Script</li>
+                <li class="list-group-item">Python</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col">
+        <div class="card text-white bg-success mb-3">
+          <div class="card-header fw-bold">2. Frameworks</div>
+          <div class="card-body">
+            <div class="card">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Bootstrap</li>
+            <li class="list-group-item">Tailwind</li>
+            <li class="list-group-item">Django</li>
+            <li class="list-group-item">React</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
 </div>
 {% endblock %}
