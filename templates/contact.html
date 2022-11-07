@@ -1,7 +1,8 @@
 {% extends "layout.html" %}
 {% block body %}
-<div class="container text-center fw-bold text-primary mt-4">
-    <div class="card text-center">
+<div class="container mt-5">
+  <!-- class="container text-center fw-bold text-primary mt-4" -->
+    <!-- <div class="card text-center">
         <div class="card-header">
           <ul class="nav nav-tabs card-header-tabs">
             <li class="nav-item">
@@ -30,7 +31,24 @@
           <p class="text-start f-80">2. +8801521788180</p>
           
         </div>
-      </div>
-
+      </div> -->
+      <form method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Your name</label>
+          <input name="name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="your name">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="email">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Your message</label>
+          <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div>
+          <input type="submit" class="btn btn-primary" value="Submit">
+        </div>
+      </form>
 </div>
 {% endblock %}

@@ -6,3 +6,5 @@ class contact(models.Model):
     email=models.EmailField(max_length=60,null=True)
     message=models.TextField(max_length=500,null=True)
 
+    
+
